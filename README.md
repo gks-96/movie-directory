@@ -1,4 +1,4 @@
-# Movie-Directotry
+# Movie-Directory
 
 ## Overview
 
