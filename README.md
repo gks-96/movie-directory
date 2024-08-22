@@ -8,20 +8,9 @@ This project is a full-stack application with a **back-end** built using Django 
 project-root/
 │
 ├── back-end/
-│ ├── demo/
-│ ├── tutorial/
-│ ├── venv/ # Python virtual environment
-│ ├── .gitignore
-│ ├── db.sqlite3 # SQLite database (for local development)
-│ └── manage.py # Django management script
 │
 ├── front-end/
-│ ├── node_modules/ # Node.js dependencies
-│ ├── public/ # Public assets (HTML, images, etc.)
-│ ├── src/ # React source code
-│ ├── .gitignore
-│ ├── package-lock.json # Lockfile for Node.js dependencies
-│ └── package.json # Project manifest for Node.js
+│ 
 │
 ├── 3 Tier AWS Architecture.pdf # Deployment architecture diagram
 └── README.md # Project documentation
