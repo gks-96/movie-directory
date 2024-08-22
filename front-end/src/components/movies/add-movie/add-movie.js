@@ -26,7 +26,7 @@ function AddMovie() {
 
     // Create a new movie object with form data
     const movieData = {
-      movie_title: title.trim(),
+      movieTitle: title.trim(),
       isHD: isHD === "true",
       isRentable: isRentable === "true",
       price: parseFloat(price), // Convert price to a number
@@ -96,6 +96,7 @@ function AddMovie() {
   return (
     <div className="add-movie">
       <h2>Add New Movie </h2>
+
       <form className="form">
         <div className="form-element">
           <label>Title</label>
@@ -132,18 +133,18 @@ function AddMovie() {
 
         <div className="form-element">
           <label>Price</label>
-          <input
-            type="number"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-          />
-        </div>
-        <div>
-          {priceError && (
-            <div className="error-message">
-              Price should be more than 2 and less than 100
-            </div>
-          )}
+          <div>
+            <input
+              type="number"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+            />
+            {priceError && (
+              <div className="error-message">
+                Price should be more than 2 and less than 100
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="form-button">
