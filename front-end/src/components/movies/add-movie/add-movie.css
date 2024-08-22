@@ -1,0 +1,76 @@
+.add-movie {
+    margin: 10px;
+    border: solid 1px black;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 500px;
+    margin: 2rem auto;
+}
+
+.add-movie h2 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.form-element {
+    display: flex;
+    /* flex-direction: row; */
+    margin: 1rem;
+}
+
+.form-element label {
+    width: 10rem;
+    font-weight: bold;
+}
+
+
+.form-element input {
+    width: 20rem;
+    
+}
+
+.form-button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.form-button input {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: green;
+    font-weight: bold;
+}
+
+.form-button button  {
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit  {
+    background-color: green;
+}
+
+.btn-cancel  {
+    background-color: red;
+}
+
+.movieSubmitted{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.error-message {
+    color: red;
+  }

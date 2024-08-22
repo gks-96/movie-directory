@@ -1,0 +1,12 @@
+li {
+    margin: 0 10px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
