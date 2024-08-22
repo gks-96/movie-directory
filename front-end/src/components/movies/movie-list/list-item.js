@@ -1,8 +1,7 @@
-function ListItem({ movie_title, isRentable, isHD, price }) {
+function ListItem({ movieTitle, isRentable, isHD, price }) {
   return (
     <tr>
-      <td>{movie_title}</td>
-
+      <td>{movieTitle}</td>
       {/* console.log("is rentable".isRentable); */}
       <td>{isRentable ? "Yes" : "No"}</td>
       {console.log("is isHD", isHD)}

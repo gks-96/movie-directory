@@ -19,14 +19,14 @@ class MovieViewSet(viewsets.ModelViewSet):
     def add_movie(self, request, pk=None):
 
         # Extract data from the request
-        movie_title = request.data.get('movie_title')
+        movieTitle = request.data.get('movie_title')
         isRentable = request.data.get('isRentable')
         isHD = request.data.get('isHD')
         price = request.data.get('price')
 
         # Creating the Movie instance
         movie = Movie.objects.create(
-            movie_title=movie_title,
+            movieTitle=movieTitle,
             isRentable = isRentable,
             isHD = isHD, 
             price = price
