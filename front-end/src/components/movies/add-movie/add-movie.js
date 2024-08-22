@@ -34,7 +34,9 @@ function AddMovie() {
 
     addMovie(movieData);
     setMovieSubmitted(true);
-
+    setTimeout(() => {
+      setMovieSubmitted(false);
+    }, 5000);
     clearScreen();
   };
 
