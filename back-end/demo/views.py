@@ -5,10 +5,10 @@ from rest_framework.response import Response
 from rest_framework import viewsets, status
 # from django.http import HttpResponse
 # from django.views import View
-from .models import Movie
+from .MovieModel import Movie
 from rest_framework import viewsets
 # do inheritance of View : so we get all the function of View class
-from .serializers import MovieSerializer
+from .MovieSerializer import MovieSerializer
 from rest_framework.decorators import action
 
 class MovieViewSet(viewsets.ModelViewSet):
