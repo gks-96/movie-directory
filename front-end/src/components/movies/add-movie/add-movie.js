@@ -35,11 +35,7 @@ function AddMovie() {
     addMovie(movieData);
     setMovieSubmitted(true);
 
-    // clearing the screen
-    setTitle("");
-    setIsHD("false");
-    setIsRentable("false");
-    setPrice("");
+    clearScreen();
   };
 
   const validate = () => {
@@ -84,13 +80,17 @@ function AddMovie() {
   const cancelHandler = (e) => {
     // clear the form
     e.preventDefault();
+    clearScreen();
+
+    console.log("Form cleared");
+  };
+
+  const clearScreen = () => {
     setTitle("");
     setIsHD("false");
     setIsRentable("false");
     setPrice("");
-    console.log("Form cleared");
   };
-
   return (
     <div className="add-movie">
       <h2>Add New Movie </h2>
